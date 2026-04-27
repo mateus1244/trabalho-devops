@@ -3,7 +3,8 @@ name: Deploy do To-Do App para o Docker Hub
 on:
   push:
     branches:
-      - master # Ajustado para master conforme seu código inicial
+      - master
+      - main  # Adicionei main também para garantir que rode em qualquer uma
 
 jobs:
   build-e-push:
@@ -25,5 +26,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
+          file: ./Dockerfile # Garante que ele procure o Dockerfile na raiz
           push: true
           tags: mateus1244/todo-app:latest
+
