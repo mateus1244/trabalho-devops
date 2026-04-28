@@ -1,4 +1,4 @@
-name: Deploy do To-Do App para o Docker Hub
+name: Deploy do To-Do App para o Docker Hub.
 
 on:
   push:
