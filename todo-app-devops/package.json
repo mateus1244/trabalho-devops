@@ -1,20 +1,22 @@
 {
-  "name": "todo-app-devops",
-  "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/mateus1244/trabalho-devops#readme",
-  "bugs": {
-    "url": "https://github.com/mateus1244/trabalho-devops/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mateus1244/trabalho-devops.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "name": "todo-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
   }
 }
